@@ -1,0 +1,31 @@
+# Buffer Pool
+innodb_buffer_pool_size = 4G
+innodb_buffer_pool_instances = 4
+innodb_buffer_pool_chunk_size = 1G
+
+# Flushing
+innodb_flush_method = unbuffered
+innodb_flush_log_at_trx_commit = 1
+innodb_flush_neighbors = 0
+innodb_io_capacity = 200
+innodb_io_capacity_max = 400
+
+# Change Buffer
+innodb_change_buffering = all
+innodb_change_buffer_max_size = 25
+
+# Adaptive Hash Index
+innodb_adaptive_hash_index = ON
+innodb_adaptive_hash_index_parts = 8
+
+# Conexiones
+max_connections=15
+
+# Tablespaces
+innodb_file_per_table = ON
+innodb_temp_data_file_path = ibtmp1:12M:autoextend:max:500M
+
+# Almacenamiento adicional
+innodb_data_file_path = ibdata1:12M:autoextend:max:2G
+innodb_log_file_size = 128M
+innodb_log_files_in_group = 2
