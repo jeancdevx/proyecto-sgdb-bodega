@@ -1,9 +1,16 @@
-INSERT INTO BOLETA (numeroBoleta, dni, idVenta) VALUES
-('B001-000001', '12345678', 13),
-('B001-000002', '87654321', 14),
-('B001-000003', '12345678', 15),
-('B001-000004', '87654321', 16),
-('B001-000005', '12345678', 17),
-('B001-000006', '87654321', 18),
-('B001-000007', '12345678', 19),
-('B001-000008', '87654321', 20);
+
+-- Boletas para clientes individuales (DNI)
+-- Los números de boleta se generan automáticamente con triggers
+-- Formato: B001-000001, B001-000002, etc.
+
+INSERT INTO BOLETA (dni, idVenta) VALUES
+-- Ventas con boleta (clientes individuales)
+('72345678', 1),   -- María López
+('78123456', 3),   -- Ana Torres  
+('71234567', 5),   -- Lucia Vargas
+('79012345', 8),   -- Roberto Fuentes
+('76789012', 9),   -- Daniela Castro
+('72345679', 11),  -- María López (segunda compra)
+('78901234', 13),  -- Roberto Fuentes (segunda compra)
+('76789013', 15),  -- Daniela Castro (segunda compra)
+('73456780', 17);  -- Jorge Paredes
