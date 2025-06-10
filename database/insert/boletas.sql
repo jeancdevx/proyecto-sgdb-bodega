@@ -1,8 +1,3 @@
-
--- Boletas para clientes individuales (DNI)
--- Los números de boleta se generan automáticamente con triggers
--- Formato: B001-000001, B001-000002, etc.
-
 INSERT INTO BOLETA (dni, idVenta) VALUES
 -- Ventas con boleta (clientes individuales)
 ('72345678', 1),   -- María López
