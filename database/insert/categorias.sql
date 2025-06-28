@@ -1,9 +1,16 @@
-INSERT INTO categoria (nombre) VALUES
+INSERT INTO CATEGORIA (nombre) VALUES
+('Abarrotes'),
+('Bebidas'),
 ('Snacks'),
-('Bebidas Gaseosas'),
-('Artículos de Librería'),
 ('Lácteos'),
 ('Panadería'),
-('Abarrotes'),
-('Productos de Limpieza'),
-('Cuidado Personal');
+('Limpieza'),
+('Higiene Personal'),
+('Medicina Básica'),
+('Dulces'),
+('Útiles Escolares'),
+('Cigarrillos'),
+('Helados'),
+('Condimentos'),
+('Enlatados'),
+('Frutas y Verduras');
